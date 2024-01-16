@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="usuario-service" />
+        <module name="api-gateway" />
+        <module name="config-server" />
+        <module name="calificacion-service" />
+        <module name="registry-service" />
+        <module name="hotel-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="api-gateway" target="17" />
+      <module name="calificacion-service" target="17" />
+      <module name="config-server" target="17" />
+      <module name="hotel-service" target="17" />
+      <module name="registry-service" target="17" />
+      <module name="usuario-service" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api-gateway" options="-parameters" />
+      <module name="calificacion-service" options="-parameters" />
+      <module name="config-server" options="-parameters" />
+      <module name="hotel-service" options="-parameters" />
+      <module name="registry-service" options="-parameters" />
+      <module name="usuario-service" options="-parameters" />
+    </option>
+  </component>
+</project>

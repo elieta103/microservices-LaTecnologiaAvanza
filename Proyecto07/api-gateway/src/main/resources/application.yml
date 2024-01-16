@@ -1,0 +1,35 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: API-GATEWAY
+  cloud:
+    gateway:
+      routes:
+        - id: USUARIO-SERVICE
+          uri: lb://USUARIO-SERVICE
+          predicates:
+            - Path=/usuarios/**
+          filters:
+            - AuthFilter
+
+        - id : HOTEL-SERVICE
+          uri: lb://HOTEL-SERVICE
+          predicates :
+            - Path=/hoteles/**,/staffs/**
+
+        - id : CALIFICACION-SERVICE
+          uri: lb://CALIFICACION-SERVICE
+          predicates :
+            - Path=/calificaciones/**
+
+        - id: AUTH-SERVICE
+          uri: lb://AUTH-SERVICE
+          predicates:
+            - Path=/auth/**
+
+  config:
+    import: configserver:http://localhost:8085
+  profiles:
+    active: dev
