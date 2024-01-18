@@ -1,4 +1,4 @@
-# Proyecto 03. Servicios simples, Eureka, ApiGateway, ConfigServer, Keycloak, Login a Eureka, Resilience4J
+# Proyecto 03. Servicios simples, Eureka, ApiGateway, ConfigServer, Keycloak, Login a Eureka, Resilience4J, Proyecto con Spring-Retry
 -   API-GATEWAY	        8083
 -   CONFIG-SERVER	    8085
 -   INVENTARIO-SERVICE	8090    MYSQL
