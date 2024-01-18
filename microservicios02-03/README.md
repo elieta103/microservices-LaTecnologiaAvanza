@@ -10,11 +10,11 @@
 
 ## Configuraciones
 -Agregar dependencias de resilience4J en orden-service
-    -   spring-cloud-starter-circuitbreaker-resilience4j
-    -   application.services en orden-service
-    -   Methodo FallBack en el Controller de orden-service
-    -   Cambio valor de retorno en service de OrdenService
-- Pära probar los servicios, se levantan todos los servicios, en inventario-service, se agrega un delay:
+    - spring-cloud-starter-circuitbreaker-resilience4j
+    - application.services en orden-service
+    - Methodo FallBack en el Controller de orden-service
+    - Cambio valor de retorno en service de OrdenService
+- Para probar los servicios, se levantan todos los servicios, en inventario-service, se agrega un delay:
     -   log.info("Espera iniciada ....");
         Thread.sleep(10000);
         log.info("Espera finalizada ...");
