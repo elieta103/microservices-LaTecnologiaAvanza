@@ -9,7 +9,7 @@
 
 
 ## Configuraciones
--Agregar dependencias de resilience4J en orden-service
+- Agregar dependencias de resilience4J en orden-service
     - spring-cloud-starter-circuitbreaker-resilience4j
     - application.services en orden-service
     - Methodo FallBack en el Controller de orden-service
@@ -22,6 +22,7 @@
         resilience4j.retry.instances.inventario.max-attempts=5
         resilience4j.retry.instances.inventario.wait-duration=2s
         Deberia Intentar 5 veces con 2 segundos se separacion, SOLO TOMA EL DEFAULT(Hace 3 intentos cada 5seg)
+    - Se agrega proyecto con spring-retry
 
 - Install Keycloak con Docker :
     - docker run -p 8081:8080 -e KEYCLOAK_ADMIN=admin -e KEYCLOAK_ADMIN_PASSWORD=admin quay.io/keycloak/keycloak:20.0.3 start-dev
